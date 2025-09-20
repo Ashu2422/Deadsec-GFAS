@@ -2,14 +2,12 @@ from __future__ import annotations
 import time
 from datetime import datetime
 from typing import Dict, List, Tuple
-
 import numpy as np
 import pandas as pd
 import pydeck as pdk
-import streamlit_folium import st_folium
-
+import streamlit as st
 import folium
-from streamlit_folium 
+from streamlit_folium  import st_folium
 from PIL import Image
 
 # ---- Page Config ----
@@ -413,5 +411,6 @@ if auto_refresh:
         st.session_state["_last_auto"] = time.time()
         st.experimental_set_query_params(_t=time.time())
         st.rerun()
+
 
 
