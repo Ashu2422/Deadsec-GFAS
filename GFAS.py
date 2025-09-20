@@ -59,7 +59,7 @@ if not st.session_state.agreed:
     st.stop()
 
 # ---- Logo and Title ----
-team_logo = Image.open(r"C:\Users\Ashish\OneDrive\Attachments\Desktop\hackathon\logo.jpg")
+team_logo = Image.open("logo.jpg")
 team_name = "💀Deadsec<br>Presenting💀"
 
 col1, col2 = st.columns([1, 3])
@@ -411,3 +411,4 @@ if auto_refresh:
         st.session_state["_last_auto"] = time.time()
         st.experimental_set_query_params(_t=time.time())
         st.rerun()
+
