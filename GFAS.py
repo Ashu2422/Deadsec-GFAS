@@ -6,7 +6,8 @@ from typing import Dict, List, Tuple
 import numpy as np
 import pandas as pd
 import pydeck as pdk
-import streamlit as st
+import streamlit import st_folium
+
 import folium
 from streamlit_folium 
 from PIL import Image
