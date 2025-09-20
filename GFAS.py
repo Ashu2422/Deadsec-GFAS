@@ -6,8 +6,8 @@ import numpy as np
 import pandas as pd
 import pydeck as pdk
 import streamlit as st
-
 from streamlit_folium  import st_folium
+import folium
 from PIL import Image
 
 # ---- Page Config ----
@@ -411,6 +411,7 @@ if auto_refresh:
         st.session_state["_last_auto"] = time.time()
         st.experimental_set_query_params(_t=time.time())
         st.rerun()
+
 
 
 
