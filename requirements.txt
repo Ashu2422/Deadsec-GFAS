@@ -5,3 +5,4 @@ pandas
 numpy
 pydeck
 Pillow
+shapely
