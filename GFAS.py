@@ -11,7 +11,7 @@ import streamlit as st
 from streamlit_folium import st_folium  # keep if you want folium later
 import folium  # not used in this cleaned version, but kept if needed
 from PIL import Image
-import shapely.geomatry
+
 # Spatial helpers
 from shapely.geometry import Point, Polygon
 
@@ -334,5 +334,6 @@ if auto_refresh:
         st.session_state["_last_auto"] = time.time()
         st.experimental_set_query_params(_t=time.time())
         st.experimental_rerun()
+
 
 
